@@ -1,0 +1,20 @@
+<p>
+<a href="#" onclick="add();return false;">Add new element</a>
+</p>
+
+<ol id="the_list">
+<li>The first element.</li>
+</ol>
+
+<script>
+counter=1;
+console.log('This is '+document.getElementById('the_list').innerHTML);
+function add()
+{
+var x=document.createElement('li');
+x.className="list_item";
+x.innerHTML="The counter is "+counter;
+document.getElementById('the_list').appendChild(x);
+counter++;
+}
+</script>

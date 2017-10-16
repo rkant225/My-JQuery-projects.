@@ -1,0 +1,25 @@
+<p>This is a function</p>
+
+<br>
+<script>
+function fun()
+{
+this.x=0;
+this.sample_method=function()
+{
+this.x=this.x+1;
+console.log("So far x is : "+this.x);
+}
+
+}
+
+instance=new fun();
+instance.sample_method();
+instance.sample_method();
+instance.sample_method();
+instance.sample_method();
+
+
+</script>
+<br>
+<p>Bye...!!!</p>
