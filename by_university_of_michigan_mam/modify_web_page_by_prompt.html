@@ -1,7 +1,7 @@
 <html>
 <head>
 
-
+<title>TESTING JS</title>
 
 </head>
 <body>
@@ -19,10 +19,20 @@ alert ('I will change actual details by the details given by you...!!!');
 var nm=prompt('Enter your name : ');
 var plc=prompt('Enter your place : ');
 var db=prompt('Enter your age : ');
+var dt=Date();
+var loc=window.location;
 
 document.getElementById('name').innerHTML=nm;
 document.getElementById('place').innerHTML=plc;
 document.getElementById('dob').innerHTML=db;
+document.write(dt);
+document.write("<br>");
+document.write(loc);
+document.write("<br>");
+document.write(document.baseURI);
+document.write("<br>");
+document.write(document.title);
+
 
 </script>
 <noscript>Your Browser doesnt support javascript.</noscript>
