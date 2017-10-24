@@ -7,8 +7,12 @@
 <body>
 <p>
 This is <b><span id="name">Rahul<span></b>.
+</p>
+<p>
 <br>
 I am from <b><span id="place">Sonauri<span></b>.
+</p>
+<p>
 <br>
 I am <b><span id="dob">23<span></b> year old.
 </p>
@@ -25,25 +29,10 @@ var loc=window.location;
 document.getElementById('name').innerHTML=nm;
 document.getElementById('place').innerHTML=plc;
 document.getElementById('dob').innerHTML=db;
-document.write(dt);
+var para=document.getElementsByTagName('p');
+document.write(para);
 document.write("<br>");
-document.write(loc);
-document.write("<br>");
-document.write(document.baseURI);
-document.write("<br>");
-document.write(document.title);
-document.write("<br>");
-document.write("Width is : "+window.innerWidth);
-
-
-
+document.write(para.length);
 </script>
-<noscript>Your Browser doesnt support javascript.</noscript>
-
-
-<p>If you have reached here then there was no error.</p>
 </body>
-
 </html>
-
-
